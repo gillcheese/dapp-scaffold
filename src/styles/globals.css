@@ -6,13 +6,14 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: -apple-system, Comic Sans MS, Comic Sans, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background-image: radial-gradient(
-    circle farthest-side at 50% 100%,rgba(1, 9, 18, 0),
-    rgba(1, 6, 14, 0.6) 36%,
-    rgba(1, 14, 29, 0.6) 55%,
-    rgba(49, 18, 93, 0.4));
+    circle farthest-side at 50% 100%,rgba(250, 250, 250, 0.9),
+    rgba(150, 250, 150, 0.9) 36%,
+    rgba(20, 150, 250, 0.8) 80%,
+    rgba(20, 150, 250, 0.9));
+
 }
 
 a {
