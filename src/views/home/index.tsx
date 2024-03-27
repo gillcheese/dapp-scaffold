@@ -10,21 +10,21 @@ import { RequestAirdrop } from '../../components/RequestAirdrop';
 import pkg from '../../../package.json';
 
 // Store
-import useUserSTICKBalanceStore from '../../stores/useUserSTICKBalanceStore';
+// import useUserSTICKBalanceStore from '../../stores/useUserSTICKBalanceStore';
 
 export const HomeView: FC = ({ }) => {
   const wallet = useWallet();
   const { connection } = useConnection();
 
-  const tokenAmount = useUserSTICKBalanceStore((s) => s.tokenAmount)
-  const { getUserSTICKBalance } = useUserSTICKBalanceStore()
+  // const tokenAmount = useUserSTICKBalanceStore((s) => s.tokenAmount)
+  // const { getUserSTICKBalance } = useUserSTICKBalanceStore()
 
   useEffect(() => {
     if (wallet.publicKey) {
       console.log(wallet.publicKey.toBase58())
-      getUserSTICKBalance(wallet.publicKey, connection)
+      
     }
-  }, [wallet.publicKey, connection, getUserSTICKBalance])
+  }, [wallet.publicKey, connection])
 
   return (
 
